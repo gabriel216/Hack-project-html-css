@@ -3,7 +3,6 @@ body {
 	margin:0;
 	background-color: #16A085;
 }
-
 * {
 	box-sizing: border-box;
 }
@@ -14,124 +13,83 @@ header {
   	height: 5px;
   	margin: 0;
 }
-
-.circle {	
+header .circle {	
+	position: absolute;
+	top:10%;
+	left:20%;
+	margin:3%;
 	border: 20px solid #06E8BD; 
 	width:200px;
 	height: 200px;
-	border-radius: 200px;
-	margin-left: 0px;
-	margin-top: 0px;
-	overflow: hidden;
+	border-radius: 30%;
 	animation: window-1 3s alternate infinite;
 }
-
-.circle .line {
-	position:relative; 
-	border: 15px solid #06E8BD; 
-	width: 40%;
-	border-radius: 25px;
-	top:50%;
-	left:66%;
-	rotate:(45deg);
-	animation: window-2 3s alternate-normal infinite;*/
+header .circle .line {
+	position: absolute;
+  	background-color:#06E8BD;
+  	height: 20px;
+ 	width: 70%;
+	border-radius: 15%;
+	top:47%;
+	left:40%;
 }
-
-.circle-aux {
+header .circle-aux {
+	position: absolute;
 	background-color: #16A085; 
 	border: 20px solid #16A085; 
 	width:200px;
 	height: 200px;
 	border-radius: 200px;
-	margin-left: 130px;
-	margin-top: -300px;
-	animation: window-1 3s alternate infinite;
-
+	left: 11%;
+	top: -215%;
+	/*animation: window-1 3s alternate infinite;
+*/
 }
-
 @keyframes window-1 {
 	10% {
 		opacity: 2;
-		top:50;
+		top:0;
 		left:0;
-		border-radius: 50%;
+		border-radius: 80%;
 	}
 	20%{
 	opacity: 2;
-		top:50;
-		left:50;
-		border-radius: 0%;	
+		top:0;
+		left:0;
+		border-radius: 80%;	
 	}
-	50%{
+	0%{
 		opacity: 3;
-		top:50;
+		top:0;
 		left:0;
 		border-radius: 25%;
 	}
 	60%{
 		opacity: 2;
-		top:50;
+		top:0;
 		left:0;
-		border-radius: 50%;	
+		border-radius: 0%;	
 	}
 	70%{
 		opacity: 5;
-		top:50;
+		top:0;
 		left:0;
 		border-radius: 0%;
 	}
 	90%{
 		opacity: 6;
-		top:50;
-		left:50;
-		border-radius: 50%;
+		top:0;
+		left:0;
+		border-radius: 0%;
 	}
 	100% {
-		opacity: 0.5;
-		top: 50;
-		left: 50;
-		border-radius: 100%;
-	}
-}
-@keyframes window-2 {
-	10% {
-		opacity: 2;
-		top:50;
-		left:0;
-		border-radius: 0%;
-	}
-	20%{
-	opacity: 2;
-		top:50;
-		left:0;
-		border-radius: 0%;	
-	}
-	50%{
-		opacity: 2;
-		top:50;
-		left:0;
-		border-radius: 0%;
-	}
-	70%{
-		opacity: 5;
-		top:50;
-		left:0;
-		border-radius: 0%;
-	}
-	90%{
-		opacity: 2;
-		top:50;
-		left:0;
-		border-radius: 50%;
-	}
-	100% {
-		opacity: 0.5;
+		opacity: 0;
 		top: 0;
-		left: 50;
+		left: 0;
 		border-radius: 100%;
 	}
 }
-
+/*Aqui termina el header de la pagina*/
 body div div img{
 	position: absolute;
 	width: 20%;
@@ -140,8 +98,7 @@ body div div img{
 	top: 0px;
 	left: 10%;
 }
-
- .user-img{
+body .user-img{
 	position: absolute;
 	padding: 0%;
 	content: 0%;
@@ -151,20 +108,40 @@ body div div img{
 	top: 10%;
 	left: 55%;
 }
-
-.user-img img{
+body .user-img img{
 	width: 100%;
 }
+video{
+	position: absolute;
+	width: 100%;
+	top: 10%;
+	left: 0%;
+}
+.square-video {
+	position: relative;
+	margin-top:3%; 
+	margin-left:30%;
+	background-color: #0E7F69;
+	width: 35%;
+	height: 400px;
+}
+body div .name{
+	position: absolute;
+	font-size: 25px;
+	left: 40%;
+	top: 50%;
+	text-decoration: underline ;
+}
+/*Aqui termina la parte del medio de lapagina y empiezael footer*/
 footer .all-img li div img:hover {
 	opacity: 0;
 }
-
 footer .all-img li div img:hover p{
 	opacity: 0;
 	visibility: visible;
 }
-
-.footer{
+footer{
+	position: fixed;
 	margin: 0px;
 	padding: 0px;
 	position: relative;
@@ -173,20 +150,17 @@ footer .all-img li div img:hover p{
 	margin-top: 2%;
 	background: #06E8BD; 
 }
-
 footer .all-img {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	right: 5%;
 }
-
 footer .all-img ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }	
-
 footer .all-img ul li {
 	background-color: #16A085;
 	display: inline-block;
@@ -196,13 +170,11 @@ footer .all-img ul li {
 	height: 150px;
 	rotate:(45deg);
 }
-
 footer .all-img ul li div{
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
-
 footer .all-img ul li img {
 	position: absolute;
 	width: 100%;
@@ -212,9 +184,7 @@ footer .all-img ul li img {
 	right: 1%;
 	left: 1%;
 	transition: all 1s;
-
 }
-
 footer .all-img li p {
 	position: absolute;
 	display:inline-block;
@@ -225,7 +195,6 @@ footer .all-img li p {
 	bottom: 50%;
 	visibility: hidden;
 }
-
 footer .all-img li .img-1{
 	left: -1%
 }
@@ -241,31 +210,6 @@ footer .all-img li img-4{
 	font-size: 200px;
 	left: 33%
 }
-
-video{
-	position: absolute;
-	width: 100%;
-	top: 10%;
-	left: 0%;
-}
-
-.square-video {
-	position: relative;
-	margin-top:3%; 
-	margin-left:30%;
-	background-color: #0E7F69;
-	width: 35%;
-	height: 400px;
-}
-
-body div .name{
-	position: absolute;
-	font-size: 25px;
-	left: 40%;
-	top: 50%;
-	text-decoration: underline ;
-}
-
 li:hover #fifa{
 	position: absolute;
 	left: 30%;
@@ -286,7 +230,6 @@ li:hover #tech{
 	left: 24%;
 	visibility: visible;
 }
-
 #likes {
 	font-family: verdana;
 	position: absolute;
