@@ -1,5 +1,6 @@
 body {
-	margin:0 auto;
+	box-sizing: border-box;
+	margin:0;
 	background-color: #16A085;
 }
 
@@ -8,9 +9,10 @@ body {
 }
 header {
 	position: relative;
-  	padding: 30px;
+  	padding: 15px;
   	width: 100%;
-  	height: 10px;
+  	height: 5px;
+  	margin: 0;
 }
 
 .circle {	
@@ -32,7 +34,7 @@ header {
 	top:50%;
 	left:66%;
 	rotate:(45deg);
-	/*animation: window-2 3s alternate-normal infinite;*/
+	animation: window-2 3s alternate-normal infinite;*/
 }
 
 .circle-aux {
@@ -41,7 +43,7 @@ header {
 	width:200px;
 	height: 200px;
 	border-radius: 200px;
-	margin-left: 144px;
+	margin-left: 130px;
 	margin-top: -300px;
 	animation: window-1 3s alternate infinite;
 
@@ -130,13 +132,28 @@ header {
 	}
 }
 
-body div img{
+body div div img{
 	position: absolute;
-	width: 300px;
+	width: 20%;
 	height:300px;
 	margin:0px;
-	margin-top: -541px;
-	margin-left: 1515px;
+	top: 0px;
+	left: 10%;
+}
+
+ .user-img{
+	position: absolute;
+	padding: 0%;
+	content: 0%;
+	width: 20%;
+	height:20%;
+	margin:0px;
+	top: 10%;
+	left: 55%;
+}
+
+.user-img img{
+	width: 100%;
 }
 footer .all-img li div img:hover {
 	opacity: 0;
@@ -150,20 +167,17 @@ footer .all-img li div img:hover p{
 .footer{
 	margin: 0px;
 	padding: 0px;
-	position: absolute;
+	position: relative;
 	width:100%;
-	height: 35%;
-	margin:0px;
-	margin-top: -20;
-	margin-left: -10px;
+	height: 200px;
+	margin-top: 2%;
 	background: #06E8BD; 
-
 }
 
 footer .all-img {
 	position: absolute;
 	width: 100%;
-	height: 300px;
+	height: 100%;
 	right: 5%;
 }
 
@@ -176,10 +190,10 @@ footer .all-img ul {
 footer .all-img ul li {
 	background-color: #16A085;
 	display: inline-block;
-	margin-top: 4%;
+	margin-top: 3%;
 	margin-left: 13%;
-	width: 300px;
-	height: 300px;
+	width: 150px;
+	height: 150px;
 	rotate:(45deg);
 }
 
@@ -195,6 +209,8 @@ footer .all-img ul li img {
 	height: 100%;
 	margin:0px;
 	top:1%;
+	right: 1%;
+	left: 1%;
 	transition: all 1s;
 
 }
@@ -202,7 +218,7 @@ footer .all-img ul li img {
 footer .all-img li p {
 	position: absolute;
 	display:inline-block;
-	font-size: 50px;
+	font-size: 30px;
 	margin: 0px;
 	top: 42%;
 	left: 22%;
@@ -227,50 +243,54 @@ footer .all-img li img-4{
 }
 
 video{
-	width: 800px;
-	height:800px;
-	margin:0px;
-	margin-top: -101px;
-	margin-left: 800px;
+	position: absolute;
+	width: 100%;
+	top: 10%;
+	left: 0%;
 }
 
 .square-video {
-	opacity: 0.1;
-	position: absolute;
-	margin-top:53px; 
-	margin-left:833px;
-	background-color: #364EBA;
+	position: relative;
+	margin-top:3%; 
+	margin-left:30%;
+	background-color: #0E7F69;
 	width: 35%;
-	height: 800px;
+	height: 400px;
 }
 
-.name{
-	font-size: 62px;
-	margin-left: 1040px;
-	margin-top: -242px;
+body div .name{
+	position: absolute;
+	font-size: 25px;
+	left: 40%;
+	top: 50%;
 	text-decoration: underline ;
 }
 
 li:hover #fifa{
-	left: 33%;
+	position: absolute;
+	left: 30%;
 	visibility: visible;
 }
 li:hover #soccer{
+	position: absolute;
+	left: 15%;
 	visibility: visible;
 }
 li:hover #travel{
-	left:20%;
+	position: absolute;
+	left: 16%;
 	visibility: visible;
 }
 li:hover #tech{
-	left: 28%;
+	position: absolute;
+	left: 24%;
 	visibility: visible;
 }
 
 #likes {
 	font-family: verdana;
 	position: absolute;
-	font-size: 100px;
-	margin-left: 1122px;
-	margin-top: -12px;	
+	font-size: 50px;
+	left: 46%;
+	top: -25%;	
 }
